@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образовательный Центр</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Образовательный Центр</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="openTab(event, 'home')">Главная</a></li>
+                <li><a href="#about" onclick="openTab(event, 'about')">О нас</a></li>
+                <li><a href="#courses" onclick="openTab(event, 'courses')">Курсы</a></li>
+                <li><a href="#contact" onclick="openTab(event, 'contact')">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="tab-content" id="home">
+        <h2>Добро пожаловать!</h2>
+        <p>Ваш путь к знаниям начинается здесь!</p>
+    </div>
+    <div class="tab-content" id="about" style="display: none;">
+        <h2>О нас</h2>
+        <p>Мы предлагаем качественное образование для всех возрастов.</p>
+    </div>
+    <div class="tab-content" id="courses" style="display: none;">
+        <h2>Наши курсы</h2>
+        <div class="course-cards">
+            <div class="course-card" draggable="true" ondragstart="drag(event)">
+                <h3>Курс</h3>
+                <p>Описание курса.</p>
+            </div>
+            <div class="course-card" draggable="true" ondragstart="drag(event)">
+                <h3>Статистика</h3>
+                <p>Статистика курса.</p>
+            </div>
+            <div class="course-card" draggable="true" ondragstart="drag(event)">
+                <h3>Ученики</h3>
+                <p>Ученики.</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="contact" style="display: none;">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами для получения дополнительной информации.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Образовательный Центр. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
